@@ -1,0 +1,43 @@
+/* Alerta Erro
+----------------------------------------------- */
+/* Geral */
+
+.alerta {
+	padding: 15px;
+	border: 1px solid gray;
+	border-radius: 3px;
+	margin: 10px;
+    font-size: 18px;
+   
+}
+.error {
+	border-color: #ebccd1;
+	color: #a94442;
+	background-color: #f2dede;
+}
+.sucesso {
+	border-color: #d6e9c6;
+	color: #3c763d;
+    background-color: #dff0d8;
+}
+.atencao {
+	border-color: #f2c218;
+	color: #595959;
+	background-color: #ffffdd;
+}
+.info {
+	border-color: #82d2f8;
+	color: #31708f;
+	background-color: #bce7fd;
+}
+
+a{
+    color:inherit;
+}
+.fecharAlerta{
+    float:right;
+}
+.msg:target{
+    display:none;
+
+}

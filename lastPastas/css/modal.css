@@ -1,0 +1,260 @@
+.modal {
+    position: absolute;
+    width: 400px;
+    background-color: #fff;
+    padding: 20px 0 10px 0;
+    text-align: center;
+    border-radius: 10px;
+    top: -50%;
+    left: 40%;
+    transform: translate(-50%, -200%);
+    opacity: 0;
+    transition-duration: 0.5s;
+	
+}
+
+.modal:target {
+    opacity: 1;
+    position: absolute;
+    top: -50%;
+    left: 40%;
+    transform: translate(-50%, -30%);
+    z-index: 99;
+    transition-duration: 0.5s;
+    top: 0;
+}
+.modalV {
+    position: absolute;
+    width: 400px;
+    background-color: #fff;
+    padding: 20px 0 10px 0;
+    border-radius: 10px;
+    top: -50%;
+    left: 40%;
+    transform: translate(-50%, -200%);
+    opacity: 0;
+    transition-duration: 0.5s;
+	
+}
+
+.modalV:target {
+    opacity: 1;
+    position: absolute;
+    top: -50%;
+    left: 40%;
+    text-align:center;
+    transform: translate(-50%, -30%);
+    z-index: 99;
+    transition-duration: 0.5s;
+    top: 0;
+}
+
+.modalEdit {
+    position: absolute;
+    width: 800px;
+    background-color: #fff;
+    padding: 20px 0 10px 10px;
+    border-radius: 10px;
+    top: -50%;
+    left: 40%;
+    transform: translate(-50%, -200%);
+    opacity: 0;
+    transition-duration: 0.5s;
+    margin: 0 0 50px 0;
+	
+}
+
+.modalEdit:target {
+    opacity: 1;
+    position: absolute;
+    top: -50%;
+    left: 40%;
+    transform: translate(-50%, -30%);
+    z-index: 99;
+    transition-duration: 0.5s;
+    top: 0;
+}
+
+.modalD {
+    position: absolute;
+    width: 800px;
+    background-color: #fff;
+    padding: 20px 0 10px 10px;
+    border-radius: 10px;
+    top: -50%;
+    left: 45%;
+    transform: translate(-50%, -200%);
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+.modalConfVenda {
+    position: absolute;
+    width: 400px;
+    background-color: #fff;
+    padding: 20px 0 10px 10px;
+    border-radius: 10px;
+    top: -50%;
+    left: 45%;
+    transform: translate(-50%, -200%);
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+.modalConfVenda:target {
+    opacity: 1;
+    position: absolute;
+    top: -50%;
+    left: 45%;
+    transform: translate(-50%, 60%);
+    z-index: 99;
+    transition-duration: 0.5s;
+    top: 0;
+}
+.modalConfVenda:target~.bg {
+    display: block;
+    z-index: 98;
+}
+.label{
+    font-size: 11pt;
+    font-weight: bold;
+    margin: 0 0 0 5px;
+}
+
+.modalD:target {
+    opacity: 1;
+    position: absolute;
+    top: -50%;
+    left: 45%;
+    transform: translate(-50%, 10%);
+    z-index: 99;
+    transition-duration: 0.5s;
+    top: 0;
+}
+
+.textModal{
+    text-align: left;
+    margin: 5px 20px 10px 20px;
+}
+#imgModal{
+    width: 100px;
+    height: 100px;
+}
+
+.bg {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.modal:target~.bg {
+    display: block;
+    z-index: 98;
+}
+
+.modalV:target~.bg {
+    display: block;
+    z-index: 98;
+}
+.modalEdit:target~.bg {
+    display: block;
+    z-index: 98;
+}
+.modalD:target~.bg {
+    display: block;
+    z-index: 98;
+}
+
+/*#bg:target ~ #modal{
+	opacity: 1;
+	position: absolute;
+	top:-50%;
+	left:40%;
+	transform: translate(-50%,-10%);
+	z-index:99;
+	transition-duration: 0.5s; 
+	top:0;
+}*/
+#title{
+    font-size: 23pt;
+}
+
+select{
+    width: 60%;
+    height: 30px;
+}
+
+#alert {
+    background: #fff;
+    color: #000;
+    font-size: 16pt;
+    width: 100%;
+    text-align: center;
+}
+
+#alertEstoque {
+    background: #fff;
+    color: #000;
+    font-size: 16pt;    
+    padding: 10px;
+    text-align:left; 
+}
+
+/*------------------botoes modal------------------*/
+
+.btnMod {
+    width: 96%;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 20px;
+}
+
+#exc {
+    background: #e06868;
+    color: #fff;
+    cursor: pointer;
+}
+#conf{
+    background: #3e9757;
+    color: #fff;
+    cursor: pointer;
+}
+
+.conf{
+    background: #3e9757;
+    color: #fff;
+    cursor: pointer;
+}
+
+#edi {
+    background: #faa732;
+    color: #fff;
+    cursor: pointer;
+}
+
+#imagemEstoque{
+    position:relative;
+    float: right;
+    width: 100px;
+    height: 100px;
+    top: -20px;
+    left: - 10px;
+}
+#novoQtd{
+    width: 100%;
+    height:15px;
+}
+#novoQtd~input{
+    width: 60px;
+    height:25px;
+    font-size:20px;
+    padding:0 10px 0 10px;
+}

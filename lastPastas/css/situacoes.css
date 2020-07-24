@@ -1,0 +1,59 @@
+#concluido {
+    width: 100px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin: 2px;
+    background: #00a65a;
+    color: #fff;
+    cursor: pointer;
+}
+
+#confirmado, #ativo {
+    width: 100px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin: 2px;
+    background: #00a65a;
+    color: #fff;
+    cursor: pointer;
+}
+
+#pendente {
+    width: 100px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin: 2px;
+    background: #85144b;
+    color: #fff;
+    cursor: pointer;
+}
+
+#cancelado {
+    width: 100px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin: 2px;
+    background: #d9534f;
+    color: #fff;
+    cursor: pointer;
+}
+
+#atrasado, #inativo {
+    width: 100px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin: 2px;
+    background: #d9534f;
+    color: #fff;
+    cursor: pointer;
+}

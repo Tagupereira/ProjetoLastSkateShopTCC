@@ -1,0 +1,7 @@
+#d9534f; vermelho
+#d9534f; verde
+#3c8dbc; azul
+#f39c12; laranja
+#00c0ef; azul2
+#f3f4f5; cinza tabela
+#f9f9f9; cinza background

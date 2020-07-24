@@ -1,0 +1,1046 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+.cores_padrao_do_sistema {
+    color: #E74C66;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background: #f3f4f5;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.buscar {
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.buscar input {
+    height: 30px;
+    margin-left: 5px;
+    width: 43px;
+    padding: 0 10px 0 10px;
+    transition-duration: 0.5s;
+}
+
+.buscar input:focus {
+    outline: none;
+    width: 300px;
+    transition-duration: 0.5s;
+}
+
+.buscarBtn {
+    width: 35px;
+    height: 34px;
+    background: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+    outline: none;
+}
+
+
+/*========================================================================*/
+
+
+/*===============================MENU=====================================*/
+
+
+/*========================================================================*/
+
+#logo {
+    position: relative;
+    width: 80%;
+    height: 160px;
+    padding: 10%;
+    background: #434343;
+    color: #fff;
+    text-align: center;
+    font-size: 70pt;
+    border-bottom: 1px solid #aaa;
+    box-shadow: 1px 0px 0px solid silver;
+}
+
+#logo a {
+    color: inherit;
+}
+.contentAlteraLogo{
+    display:flex;
+    flex-direction: row;
+}
+.imgLogo{
+    width: 200px;
+    height: 150px;
+    border: 1px solid rgb(63, 63, 63);
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 5px;
+}
+.logoEdit{
+  
+    position: relative;
+    width: 100%;   
+}
+.dadosEmpresa{
+    width: 600px;
+    border: 1px solid rgb(121, 121, 121);
+    border-radius: 5px;
+    margin: 10px 0 0 10px;
+    padding: 5px;
+    display: inline-block; 
+
+}
+.inputDadosEmpresa{
+    width: 96%;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    padding: 0 10px;
+    font-size: 13pt;
+    margin-bottom: 10px;
+
+}
+
+.configBtn {
+    width: 99%;
+    border: none;
+    outline: none;
+    height: 30px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12pt;
+}
+
+#nomeuser {
+    /*nome abaixo do logo ==========================*/
+    font-size: 15pt;
+}
+
+.bar {
+    /* barra topo==========================*/
+    position: absolute;
+    background-color: #434343;
+    width: 100%;
+    padding: 0px;
+    display: inline-block;
+    float: right;
+    text-align: right;
+    color: #fff;
+}
+
+.signout {
+    /*botão sair ==========================*/
+    background: none;
+    width: 60px;
+    height: 50px;
+    color: #fff;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.nav {
+    /*menu ==========================*/
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    font-family: 'Arial';
+    background: #CDC9C9;
+    box-shadow: 2px 0px 2px;
+    z-index: 40;
+}
+
+.item {
+    /*botoes menu==========================*/
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 220px;
+    /* 100"vw" largura total do elemento*/
+    /* 100"vh" altura total do elemento*/
+    background: #656565;
+}
+
+.item label {
+    display: block;
+    padding: 15px;
+    background: #434343;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    border-bottom: 1px solid #aaa;
+}
+
+.item label:hover {
+    background: #475882;
+}
+
+.item ul {
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .3s linear;
+}
+
+.item input {
+    display: none;
+}
+
+.item ul li a {
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    background: #fafafa;
+    color: #333;
+    border-bottom: 2px solid #aaa;
+}
+
+.item ul li a:hover {
+    background: #9cf;
+}
+
+.item input:checked~ul {
+    height: auto;
+    max-height: 200px;
+    transform: all;
+}
+
+
+/*==========================================================================================*/
+
+.container {
+    /* conteudo ==========================*/
+    position: relative;
+    width: 78%;
+    height: 100%;
+    display: inline-block;
+    margin-top: 51px;
+    margin-left: 221px;
+    padding-left: 15px;
+}
+
+
+/*==========================================================================================*/
+
+.cabecalho {
+    position: relative;
+    font-size: 18pt;
+    margin: 30px;
+}
+
+
+/*========================================================================*/
+
+
+/*===========================botoes coloridos=============================*/
+
+
+/*========================================================================*/
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 130px;
+    margin: 10px 2px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.linkIni {
+    width: 100%;
+    height: 20px;
+    background: #000;
+    opacity: 0.2;
+    font-size: 10pt;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    margin-top: -25px;
+    padding-top: 5px;
+}
+
+.botoes:hover .logobtn {
+    opacity: 0.2;
+    transition: 0.2s;
+    font-size: 55pt;
+}
+
+.linkIni:hover {
+    opacity: 0.3;
+}
+
+.btnIni {
+    color: #fff;
+    top: 60px;
+    padding: 10px 0 0 10px;
+    height: 200px;
+    font-size: 15pt;
+}
+
+.logobtn {
+    color: #000;
+    font-size: 50pt;
+    opacity: 0.1;
+    margin-top: 8px;
+    transition: 0.2s;
+    padding: 0px 10px;
+}
+
+
+/*==========================*/
+
+#btnVendas {
+    background: #DAA520;
+}
+
+
+/*==========================*/
+
+#btnProdutos {
+    background: #006e8f;
+}
+
+
+/*==========================*/
+
+#btnReceber {
+    background: #397049;
+}
+
+
+/*==========================*/
+
+#btnPagar {
+    background: #b63a3a;
+}
+
+
+/*========================================================================*/
+
+
+/*============================== clientes ===========================*/
+
+
+/*========================================================================*/
+
+.tabelIniCli {
+    width: 100%;
+    border: 1px solid rgb(184, 184, 184);
+    border-top: 2px solid #078bbe;
+    background: #fff;
+}
+
+#tabelaCliente {
+    height: 40px;
+    font-size: 16px;
+    background: #078bbe;
+    color: #fff;
+}
+
+.btnAdWhats {
+    color: #fff;
+    background: #17ab7b;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.btnAdInsta {
+    color: #fff;
+    background: #6440c9;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 10px;
+    padding-left: 10px;
+    text-align: left;
+    cursor: pointer;
+}
+
+
+.btnAdFace {
+    color: #fff;
+    background: #2c2eac;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 10px;
+    padding-left: 10px;
+    text-align: left;
+    cursor: pointer;
+}
+
+
+/*========================================================================*/
+
+
+/*==============================div financeiro ===========================*/
+
+
+/*========================================================================*/
+
+.contas {
+    /*div onde fica os quadros do financeiro*/
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.blocoContas {
+    position: relative;
+    width: 50%;
+    padding: 3px;
+    display: inline-block;
+}
+
+.contasettings {
+    width: 100%;
+    height: 275px;
+    overflow: hidden;
+}
+
+#contasPagar {
+    color: #b63a3a;
+}
+
+#tabelaapagar {
+    border: 1px solid rgb(184, 184, 184);
+    border-top: 2px solid #b63a3a;
+}
+
+#tabelareceber {
+    border: 1px solid rgb(184, 184, 184);
+    border-top: 2px solid #397049;
+}
+
+#contasReceber {
+    color: #04B45F;
+}
+
+.tituloContasInicio {
+    margin: 10px;
+}
+
+.tabelIni {
+    width: 100%;
+    border: 1px solid rgb(184, 184, 184);
+    background: #fff;
+}
+
+.tabelIniAp {
+    width: 100%;
+    border: none;
+}
+
+.tabelIniRe {
+    width: 100%;
+}
+
+.tabelIniRec {
+    width: 100%;
+    border: 1px solid rgb(184, 184, 184);
+    border-top: 2px solid #397049;
+    background: #fff;
+}
+
+.tabelIniprod {
+    width: 100%;
+    border: 1px solid rgb(184, 184, 184);
+    border-top: 2px solid #006e8f;
+    margin: 0 0 50px 0;
+}
+
+#nometabelaagenda {
+    height: 40px;
+    font-size: 16px;
+    background: #006e8f;
+    color: #fff;
+}
+
+.compromissos {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 3px;
+    margin-bottom: 50px;
+    padding-top: 10px;
+    border: 1px solid rgb(184, 184, 184);
+    border-top: 2px solid #006e8f;
+    overflow: hidden;
+}
+
+.calendar {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+.nomeAgenda {
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+tab {
+    width: 100%;
+}
+
+.umtab {
+    height: 30px;
+}
+
+.umtab:nth-child(2n) {
+    background: #d3d3d3;
+}
+
+
+.umtabhome {
+    height: 30px;
+    color: #b63a3a;
+}
+
+.umtabhome:nth-child(2n) {
+    background: #d3d3d3;
+}
+
+/*========================================================================*/
+
+
+/*============================= CONTAS A PAGAR ===========================*/
+
+
+/*========================================================================*/
+
+.cabecalhoApagar {
+    color: rgb(161, 2, 2);
+    width: 100%;
+    background: #e4e4e4;
+    position: relative;
+    font-size: 18pt;
+    padding: 30px 30px 12px 30px;
+    display: inline-block;
+}
+
+.saldoAp {
+    display: inline-block;
+    float: right;
+}
+
+#saldo-apagar-atual {
+    font-size: 12pt;
+}
+
+#nometabelapagar {
+    height: 40px;
+    font-size: 16px;
+    background: rgb(182, 58, 58);
+    color: #fff;
+}
+
+.blocoApagar {
+    position: relative;
+    width: 100%;
+    padding: 3px;
+    display: inline-block;
+}
+
+.contasettingsapagar {
+    width: 100%;
+}
+
+.contasapagarcontent {
+    /*div onde fica os quadros do financeiro*/
+    position: relative;
+    display: inline-block;
+    width: 99.6%;
+    margin-top: 30px;
+}
+
+.btnAdc {
+    color: #fff;
+    background: #17ab7b;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 10px;
+}
+
+.btnAdc:hover {
+    background: #097552;
+    cursor: pointer;
+}
+
+.conteudoApagar {
+    width: 95%;
+    margin: 0 20px 0 20px;
+}
+
+.formApagar {
+    position: relative;
+    display: inline-block;
+    width: 97%;
+    margin: 60px 5px 10px 5px;
+    background: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 2pc;
+    padding: 2pc;
+}
+
+.formAdd {
+    margin: 10px;
+}
+
+.campos {
+    display: inline-block;
+    /*border: 2px solid blue;*/
+    margin: 20px;
+}
+
+.input2 {
+    width:95%;
+    outline: none;
+    border-radius: 5px;
+    padding: 0 10px 0 10px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin-bottom:5px;
+    font-size: 13pt;
+}
+
+.btadcApa {
+    margin: 20px;
+}
+
+#cad {
+    background: green;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+#cad:hover {
+    cursor: pointer;
+    background: rgb(0, 73, 0);
+}
+
+#canc {
+    background: rgb(175, 36, 36);
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+#canc:hover {
+    cursor: pointer;
+    background: rgb(73, 0, 0);
+}
+
+.btn {
+    width: 30px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin: 2px;
+    font-size: 20px;
+}
+
+#ex {
+    background: rgb(255, 53, 53);
+    color: #fff;
+    cursor: pointer;
+}
+
+#ed {
+    background: #f0ca4e;
+    color: #fff;
+    cursor: pointer;
+}
+
+#vs {
+    background: #006e8f;
+    color: #fff;
+    cursor: pointer;
+}
+
+#es {
+    background: #011a22;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+#confirm {
+    background: #019e55;
+    color: #fff;
+    cursor: pointer;
+}
+
+.um:nth-child(2n) {
+    background: #aaa;
+    color: #fff;
+    align-items: center;
+}
+
+.um:hover {
+    opacity: 0.9;
+}
+
+
+/*========================================================================*/
+
+
+/*=============================PAGINA ARECEBER============================*/
+
+
+/*========================================================================*/
+
+.cabecalhoAreceber {
+    color: rgb(57, 112, 73);
+    width: 100%;
+    background: #e4e4e4;
+    position: relative;
+    font-size: 18pt;
+    padding: 30px;
+}
+
+#nometabelareceber {
+    height: 40px;
+    font-size: 16px;
+    background: rgb(57, 112, 73);
+    color: #fff;
+}
+
+.blocoAreceber {
+    position: relative;
+    width: 100%;
+    padding: 3px;
+    display: inline-block;
+}
+
+.contasettingsareceber {
+    width: 100%;
+}
+
+.contasrecebercontent {
+    /*div onde fica os quadros do financeiro*/
+    position: relative;
+    display: inline-block;
+    width: 99.6%;
+    margin-top: 30px;
+}
+
+.btnAdc {
+    color: #fff;
+    background: #17ab7b;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 10px;
+}
+
+.btnAdc:hover {
+    background: #097552;
+    cursor: pointer;
+}
+
+.conteudoAreceber {
+    width: 95%;
+    margin: 0 20px 0 20px;
+    border: 2px solid green;
+}
+
+.formAreceber {
+    position: relative;
+    display: inline-block;
+    width: 99%;
+    height: 600px;
+    margin: 60px 5px 10px 5px;
+    border: 2px solid green;
+}
+
+.btadcAre {
+    margin: 20px;
+}
+
+
+/*========================================================================*/
+
+
+/*============================= TELA DE VENDAS ===========================*/
+
+
+/*========================================================================*/
+
+.formVendas {
+    background: #fff;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 550px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+label {
+    font-size: 15pt;
+}
+
+.formInput {
+    width: 25%;
+    margin: 10px 0px 10px 0px;
+}
+
+.camposVenda {
+    width: 94%;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin: 10px 10px 10px 0;
+    padding: 0 3% 0 3%;
+    font-size: 15pt;
+    outline: none;
+}
+
+.Produto {
+    width: 30%;
+    height: 94%;
+    margin: 45px 20px 0px 30px;
+    border-radius: 10px;
+    /*border:1px solid black;*/
+}
+
+.imgProduto {
+    display: inline-block;
+    width: 97%;
+    height: 250px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+#imgProduto {
+    width: 100%;
+}
+
+.descricao {
+    background: #fff;
+    width: 97%;
+    height: 30%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: auto;
+    margin: 20px 0 0 0;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.lista {
+    display: inline-block;
+    width: 45%;
+    border-radius: 10px;
+    margin: 5px 0 20px 0;
+    text-align: center;
+}
+
+.listacompra {
+    padding: 10px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: auto;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.btnaction {
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    margin: 10px 0 0 0;
+}
+
+.concluir {
+    color: #fff;
+    background: #17ab7b;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.concluir:hover {
+    background: #097552;
+}
+
+.adcProduto {
+    margin-top: 30px;
+    color: #fff;
+    background: #17ab7b;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    font-size: 15pt;
+}
+
+.adcProduto:hover {
+    background: #097552;
+}
+
+.cancelar {
+    background: #FF6347;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cancelar:hover {
+    background: #ff2c2c;
+}
+
+.tabelVenda {
+    width: 100%;
+}
+
+.descri {
+    width: 75%;
+    height: 35px;
+    text-align: left;
+    font-size: 10pt;
+    padding: 0 0 0 10px;
+}
+
+.buscaCompra {
+    width: 250px;
+    height: 20px;
+    border: none;
+    border-radius: 10px;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+
+/*========================================================================*/
+
+.cabecalhoProdutos {
+    color: #006e8f;
+    width: 100%;
+    background: #e4e4e4;
+    position: relative;
+    font-size: 18pt;
+    padding: 30px;
+}
+
+#nometabelaProdutos {
+    height: 40px;
+    font-size: 16px;
+    background: #006e8f;
+    color: #fff;
+}
+
+@media only screen and (max-width: 1159px) {
+    .blocoContas {
+        width: 98%;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1039px) {
+    .blocoContas {
+        width: 100%;
+        display: block;
+    }
+    .container {
+        width: 75%;
+    }
+    .contas {
+        width: 100%;
+    }
+    .compromissos {
+        width: 98%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .cabecalho {
+        display: inline-block;
+        width: auto;
+    }
+    .container {
+        width: 75%;
+    }
+    .contas {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 777px) {
+    .container {
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 518px) {
+    .nav {
+        display: none;
+    }
+    .container {
+        margin-left: 0px;
+        width: 99%;
+    }
+    .blocoContas {
+        width: 99%;
+    }
+    .compromissos {
+        width: 99%;
+    }
+}

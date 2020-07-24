@@ -1,0 +1,190 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+*{
+	margin: 0;
+	padding:0;
+}
+body{
+	
+	font-family: sans-serif;
+	background: url("../img/fundo.jpg") no-repeat fixed center ;
+	background-size: cover;
+	color: #fff;
+	
+}
+.error{
+	color:#ff0000;
+}
+
+.formUser{
+	width:260px;
+	
+	padding:30px;
+	padding-bottom:7px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	background:rgba(0,0,0, 0.8);
+	text-align:center;
+	border-radius: 30px;
+	border: 3px solid #0d6d89;
+	
+	
+}
+.formUser h1{
+	color:white;
+	text-transform: uppercase;
+	font-weight:500;
+}
+.formUser h6{
+	color:white;
+	font-weight:500;
+}
+.formUser input[type="text"], .formUser input[type="password"]{
+	border:0;
+	background: rgba(209, 207, 207, 0.3);
+	display:block;
+	margin:20px auto;
+	text-align:center;
+	border: 3px solid #130520;
+	padding: 14px 10px;
+	width:200px;
+	outline: none;
+	color:white;
+	border-radius:24px;
+	transition:0.25s;
+}
+.formUser input[type="text"]:focus, .formUser input[type="password"]:focus{
+	width:230px;
+	background:#fff;
+	color:black;
+	border-color:#0d6d89;
+	
+}
+.formUser input[type="submit"]{
+	border:0;
+	background: none;
+	display:block;
+	margin:20px auto;
+	text-align:center;
+	border: 2px solid #0d6d89;
+	padding: 10px 40px;
+	outline: none;
+	color:white;
+	border-radius:24px;
+	transition:0.25s;
+	cursor:pointer;
+}
+.formUser input[type="submit"]:focus {
+	background:#0d6d89;
+}
+.formUser input[type="submit"]:hover {
+	background:#0d6d89;
+}
+#altCad{
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+}
+.loginError{
+	color: #fff;
+	margin-top:40px;
+}
+
+a{
+	text-decoration: none;
+}
+
+#button{
+	border:0;
+	background: none;
+	display:block;
+	margin:20px auto;
+	text-align:center;
+	border: 2px solid #0d6d89;
+	padding: 10px 40px;
+	outline: none;
+	border-radius:24px;
+	transition:0.25s;
+	cursor:pointer;
+	color:white;
+}
+#button:hover {
+	background:#0d6d89;
+}
+
+/*============================CADASTRAR=====================================================*/
+
+h2{
+	color: #fff;
+	font-size: 15pt;
+}
+.cadUser{
+	width:260px;
+	height:600px;
+	padding:30px;
+	padding-bottom:7px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	background:rgba(0,0,0, 0.8);
+	text-align:center;
+	border-radius: 30px;
+	
+}
+.cadUser h1{
+	color:white;
+	text-transform: uppercase;
+	font-weight:500;
+	
+}
+.cadUser h6{
+	color:white;
+	font-weight:500;
+}
+.cadUser input[type="text"], .cadUser input[type="password"]{
+	border:0;
+	background: rgba(255,255,255,0.1);
+	display:block;
+	margin:20px auto;
+	text-align:center;
+	border: 3px solid #130520;
+	padding: 14px 10px;
+	width:200px;
+	outline: none;
+	color:white;
+	border-radius:24px;
+	transition:0.25s;
+}
+.cadUser input[type="text"]:focus, .cadUser input[type="password"]:focus{
+	width:230px;
+	background:#fff;
+	color:black;
+	border-color:#0d6d89;
+	
+}
+.cadUser input[type="submit"]{
+	border:0;
+	background: none;
+	display:block;
+	margin:20px auto;
+	text-align:center;
+	border: 2px solid #0d6d89;
+	padding: 10px 40px;
+	outline: none;
+	color:white;
+	border-radius:24px;
+	transition:0.25s;
+	cursor:pointer;
+}
+.cadUser input[type="submit"]:focus {
+	background:#0d6d89;
+}
+.cadUser input[type="submit"]:hover {
+	background:#0d6d89;
+}
+#cancelar{
+	text-decoration: none;
+	color:#fff;
+}

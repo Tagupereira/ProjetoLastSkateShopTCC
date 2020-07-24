@@ -1,0 +1,238 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+.cores_padrao_do_sistema{
+	color:#E74C66;
+
+
+}
+
+*{
+	margin: 0;
+	padding:0;
+}
+
+body{
+	font-family: sans-serif;
+	background: #f3f4f5;
+	width:100%;
+	height:100%;
+	overflow: auto;
+}
+
+/*========================================================================*/
+/*===============================MENU=====================================*/
+
+.bar{ /* barra topo==========================*/
+	background-color:#434343;
+	width:100%;
+	padding:0px;
+	float: right;
+	text-align: right;
+	color:#fff;
+		
+}
+.signout{/*botão sair ==========================*/
+	background: none;
+	width: 60px;
+	height:50px;
+	color: #fff;
+	margin-right:10px;
+	border:none;
+	cursor: pointer; 
+	outline: none;
+}
+.BemVindoUserVendas{
+	float:left;
+	margin: 15px 0 5px 30px;
+}
+
+/*========================================================================*/
+/*============================= TELA DE VENDAS ===========================*/
+/*========================================================================*/
+.container{
+	display:flex;
+	flex-direction:column;
+}
+
+.btnActionVoltar{
+	width:100px;
+	height: 30px;
+	cursor:pointer;
+	margin: 10px 15px 0 0;
+	
+}
+.voltar{
+	background: #FF6347;
+	color: #fff;
+	border: none;
+	outline:none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.voltar:hover{
+	background:#ff2c2c;
+}
+.formVendas{
+	background:#fff;
+	display:flex;
+	flex-direction: row;
+	height: 500px;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+#codVenda{
+	background:rgb(233, 233, 233);
+	border-radius: 5px;
+	padding: 10px;
+	width:auto;
+	height: 15px;
+	display: block;
+}
+.divBusca{
+	display:inline-block;
+	width: 80%;
+}
+.divQtd{
+	display:inline-block;
+	width: 16%;
+
+}
+
+.inputPesquisa{
+	position:relative;
+	border-radius: 5px;
+	border:1px solid #9b9b9b;
+	width: 96%;
+	display:inline-block;
+	height: 25px;
+	font-size: 12pt;
+	outline: none;
+	padding: 0 5px 0 5px;
+	
+}
+.inputQtd{
+	position:relative;
+	border-radius: 5px;
+	border:1px solid #9b9b9b;
+	width:50%;
+	display:inline-block;
+	height: 25px;
+	font-size: 12pt;
+	outline: none;
+	padding: 0 5px 0 5px;
+	text-align:center;
+	margin: 0 0 0 10px;
+}
+
+.labelPesquisa{
+	margin:0 10px 0 10px;
+}
+
+.tabelIniprod {
+    width: 100%;
+	margin:30px 0 0 0;
+	border-collapse: collapse;
+}
+#nometabelaProdutos{
+	text-align: center;
+	height: 50px;
+}
+
+.um{
+	height: 30px;
+	
+}
+
+.um:nth-child(2n) {
+    background: rgb(233, 233, 233);
+}
+.btn {
+    width: 30px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin: 2px;
+    font-size: 20px;
+}
+
+#ex {
+    background: rgb(255, 53, 53);
+    color: #fff;
+    cursor: pointer;
+}
+.itens{
+	border: 1px solid #ccc;
+	width:70%;
+	border-radius: 5px;
+	padding: 5px;
+	overflow: auto;
+}
+.itens2{
+	flex-direction: column;
+	width:30%;
+	border: 1px solid #ccc;
+	margin:0 0 0 10px;
+	border-radius: 5px;
+	padding: 10px;
+	overflow: auto;
+}
+
+.finalizaCompra td{
+	height:30px;
+	padding:10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}	
+.tableConfPagamento{
+	margin: 0 0 20px 0;
+	width:100%;
+}
+
+.formFatura{
+	background:#fff;
+	display:flex;
+	flex-direction: column;
+	margin: 30px ;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+.logoFatura{
+	width: 150px;
+}
+.numeroVenda{
+	float: right;
+	margin: 30px;
+}
+.itensFatura{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 5px;
+	overflow: auto;
+}
+#titulos{
+	font-size: 12px;
+}
+.titulo1{
+	width: 70px;
+}
+.titulo2{
+	width: 100px;
+}
+.titulo3{
+	width: 100px;
+	text-align:center;
+	
+}
+.link{
+	cursor:pointer;
+}
+.tituloDados{
+	width: 100px;
+}
+.listaItem{
+	width:100%;
+}
